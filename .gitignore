@@ -1,0 +1,15 @@
+# Resume files
+*.pdf
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+# MacOS file
+.DS_Store
