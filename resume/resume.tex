@@ -1,3 +1,10 @@
+%-------------------------
+% Resume in Latex
+% Author : Wick Dynex
+% Inspired by: https://github.com/aserador/resume-template
+% Email: wick.dynex@qq.com
+% License : MIT
+%------------------------
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{fontawesome5}
@@ -13,17 +20,19 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{graphicx}
-\usepackage{mwe} 
+\usepackage{mwe}
 \usepackage{wrapfig}
 
 \usepackage{fontspec}
-\setmainfont{Lato}
-
-\usepackage{xeCJK}  
-\setCJKmainfont{SimSun}
+\setmainfont[
+    Path = ../font/Lato/,
+    Extension = .ttf,
+    BoldFont = Lato-Bold,
+    ItalicFont = Lato-Italic
+]{Lato-Regular}
 
 \pagestyle{fancy}
-\fancyhf{} 
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -46,9 +55,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
-
 %-------------------------%
 % Custom commands
 \begin{document}
@@ -58,7 +64,8 @@
 %%%%%%  RESUME STARTS HERE  %%%%%
 
 %----------HEADING----------%
-\input{src/heading}
+% \input{src/heading}
+\insertHeading
 
 %-----------EDUCATION-----------%
 \input{src/education.tex}
