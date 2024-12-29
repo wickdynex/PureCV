@@ -1,5 +1,19 @@
-%-------------------------%
-% Custom commands
+%----------CUSTOM---------%
+\newif\ifuseImageHeading
+
+%----------SWITCH---------%
+% choose which version of heading.tex is used
+\useImageHeadingtrue
+% \useImageHeadingfalse
+
+\newcommand{\insertHeading}{
+  \ifuseImageHeading
+    \input{src/heading}
+  \else
+    \input{src/heading_basic}
+  \fi
+}
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
