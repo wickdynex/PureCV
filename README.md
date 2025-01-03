@@ -107,4 +107,3 @@ This project is inspired by the [Resume Template](https://github.com/aserador/re
 
 - **Fonts**: The fonts used in this project (Lato and Source Han Serif) are bundled within the project, so no need for additional installation.
 - **Cross-platform compatibility**: The project is designed to work seamlessly on Linux, macOS, and Windows.
-
