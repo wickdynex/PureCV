@@ -1,0 +1,89 @@
+%-------------------------
+% Resume in Latex
+% Author : Wick Dynex
+% Inspired by: https://github.com/aserador/resume-template
+% Email: wick.dynex@qq.com
+% License : MIT
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{wrapfig}
+
+\usepackage{fontspec}
+\setmainfont[
+    Path = ../font/Lato/,
+    Extension = .ttf,
+    BoldFont = Lato-Bold,
+    ItalicFont = Lato-Italic
+]{Lato-Regular}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+%-------------------------%
+% Custom commands
+\begin{document}
+\include{custom-commands}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+% \input{src/heading}
+\insertHeading
+
+%-----------EDUCATION-----------%
+\input{src/education.tex}
+
+%-----------EXPERIENCE-----------%
+\input{src/experience}
+
+%-----------PROJECTS-----------%
+\input{src/projects}
+
+%-----------SKILLS-----------%
+\input{src/skills.tex}
+
+%-----------ACHIEVEMENTS-----------%
+\input{src/achievements}
+
+%-----------POR-----------%
+\input{src/socialEngagements}
+
+%-------------------------------------------%
+\end{document}
