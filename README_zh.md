@@ -37,7 +37,7 @@ Make sure you have **XeLaTeX** installed on your system. You can install it base
   ```bash
   sudo apt-get install texlive-xetex
   ```
-
+happy new year
 - **macOS** (via Homebrew):
 
   ```bash
