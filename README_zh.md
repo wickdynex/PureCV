@@ -32,7 +32,6 @@ git clone https://github.com/wickdynex/PureCV.git
 
 Make sure you have **XeLaTeX** installed on your system. You can install it based on your OS:
 
-
 - **Linux** (Debian/Ubuntu):
 
   ```bash
