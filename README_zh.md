@@ -40,7 +40,6 @@ Make sure you have **XeLaTeX** installed on your system. You can install it base
 
 - **macOS** (via Homebrew):
 
-
   ```bash
   brew install --cask mactex
   ```
