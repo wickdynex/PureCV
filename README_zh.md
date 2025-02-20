@@ -38,6 +38,7 @@ Make sure you have **XeLaTeX** installed on your system. You can install it base
   sudo apt-get install texlive-xetex
   ```
 
+
 - **macOS** (via Homebrew):
 
   ```bash
