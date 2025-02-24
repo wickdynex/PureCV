@@ -44,7 +44,6 @@ Make sure you have **XeLaTeX** installed on your system. You can install it base
   brew install --cask mactex
   ```
 
-
 - **Windows**: You can install **MiKTeX** or **TeX Live**.
 
 ### Prerequisites
