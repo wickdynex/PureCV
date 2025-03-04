@@ -65,7 +65,6 @@ To generate the PDF resume:
 make
 ```
 
-
 This will generate the `resume.pdf` file in the project directory.
 
 ### Clean Build Files
