@@ -1,5 +1,6 @@
 # PureCV
 
+
 **PureCV** is a modern resume template based on the XeLaTeX engine, which supports generating high-quality PDF resumes. It supports multiple languages (currently English and Chinese) and comes with built-in fonts, so there's no need to install additional fonts or tools. The project uses the `make` tool for automatic compilation and cleaning, and includes a `watch_tex.sh` script that automatically rebuilds the resume when `.tex` files change.
 
 ## Preview
