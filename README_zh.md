@@ -1,110 +1,95 @@
 # PureCV
 
+**PureCV** 是一款基于 XeLaTeX 引擎的现代化简历模板，支持生成高质量 PDF 简历。它支持多语言（目前为英文和中文），并内置字体，无需额外安装字体或工具。项目使用 `make` 工具实现自动化编译与清理，并包含 `watch_tex.sh` 脚本，可在 `.tex` 文件变化时自动重建简历。
 
-**PureCV** is a modern resume template based on the XeLaTeX engine, which supports generating high-quality PDF resumes. It supports multiple languages (currently English and Chinese) and comes with built-in fonts, so there's no need to install additional fonts or tools. The project uses the `make` tool for automatic compilation and cleaning, and includes a `watch_tex.sh` script that automatically rebuilds the resume when `.tex` files change.
+## 预览
 
-## Preview
+### 带图片的标题
 
-### Image Heading
+[图片预览]
 
-<img src="./preview.png"/>
+### 无图片的标题
 
-### No Image Heading
+[图片预览]
 
-<img src="./preview_basic.png"/>
+## 功能特性
 
-## Features
+- **多语言支持**：模板同时支持英文和中文，并包含定制字体。
+- **内置字体**：集成了 Lato 和思源黑体（用于中文字符），字体文件已随项目打包。
+- **两种标题样式**：
+  - **基础标题**：无图片的简洁版本。
+  - **完整标题**：标题中包含图片。
+- **自动化构建流程**：项目包含 `Makefile`，通过 `make` 命令即可自动编译和清理。
+- **实时构建**：`watch_tex.sh` 脚本可监控 `.tex` 文件变化并自动重建简历。
 
-- **Multi-language support**: The template supports both English and Chinese, and comes with custom fonts.
-- **Custom fonts**: The template includes Lato and Source Han Serif fonts (for Chinese characters), which are bundled with the project.
-- **Two heading styles**:
-  - **Basic Heading**: A simpler version without images.
-  - **Full Heading**: Includes an image in the heading.
-- **Automatic build process**: The project includes a `Makefile` to automatically compile and clean using the `make` command.
-- **Real-time build**: A `watch_tex.sh` script monitors `.tex` file changes and rebuilds the resume automatically.
+## 安装指南
 
-## Installation
+使用 **PureCV** 前，请先克隆项目到本地：
 
-To use **PureCV**, first clone the project to your local machine:
-
-```bash
 git clone https://github.com/wickdynex/PureCV.git
-```
 
-Make sure you have **XeLaTeX** installed on your system. You can install it based on your OS:
+确保系统已安装 **XeLaTeX**。根据操作系统选择安装方式：
 
 - **Linux** (Debian/Ubuntu):
 
-  ```bash
-  sudo apt-get install texlive-xetex
-  ```
+sudo apt-get install texlive-xetex
 
-- **macOS** (via Homebrew):
+- **macOS** (通过 Homebrew):
 
-  ```bash
-  brew install --cask mactex
-  ```
+brew install --cask mactex
 
-- **Windows**: You can install **MiKTeX** or **TeX Live**.
+- **Windows**：可安装 **MiKTeX** 或 **TeX Live**。
 
-### Prerequisites
+### 依赖项
 
-- **XeLaTeX**: Used for compiling `.tex` files into PDF.
-- **Make**: Make sure the `make` tool is installed on your system (usually pre-installed on Unix-based systems).
-- **Font files**: The required font files are included in the `font/` directory.
+- **XeLaTeX**：用于将 `.tex` 文件编译为 PDF。
+- **Make**：确保系统已安装 `make` 工具（Unix 系统通常预装）。
+- **字体文件**：所需字体文件已包含在 `font/` 目录中。
 
-## Usage
+## 使用方法
 
-### Build Resume
+### 构建简历
 
-To generate the PDF resume:
+生成 PDF 简历的步骤：
 
-1. Open a terminal and navigate to the project directory.
-2. Run `make` to build the resume.
+1. 打开终端，进入项目目录。
+2. 运行 `make` 命令构建简历。
 
-```bash
 make
-```
 
-This will generate the `resume.pdf` file in the project directory.
+生成的 `resume.pdf` 文件将保存在项目目录中。
 
-### Clean Build Files
+### 清理构建文件
 
-If you want to clean up temporary files generated during the build process:
+如需清理构建过程中生成的临时文件：
 
-```bash
 make clean
-```
 
-### Watch File Changes
+### 监控文件变化
 
-If you'd like to automatically rebuild the resume whenever a `.tex` file changes, you can use the `watch_tex.sh` script:
+若需在 `.tex` 文件变化时自动重建简历，可使用 `watch_tex.sh` 脚本：
 
-```bash
 ./watch_tex.sh
-```
 
-This script will monitor `.tex` files in the `resume/` directory and rebuild the resume whenever a file changes.
+该脚本会监控 `resume/` 目录下的 `.tex` 文件，并在文件变化时自动重新构建。
 
-## Customization
+## 个性化定制
 
-You can personalize your resume by modifying the following:
+您可通过修改以下内容定制简历：
 
-- **Personal Information**: Update your personal details (e.g., name, contact info) in the `resume.tex` file.
-- **Resume Content**: Modify content sections (e.g., achievements, education, experience) located in the `src/` directory (e.g., `achievements.tex`, `education.tex`).
-- **Heading Style**: Choose between the basic or full heading styles by including the appropriate `.tex` file in `resume.tex` (`heading_basic.tex` or `heading.tex`).
+- **个人信息**：在 `resume.tex` 文件中更新姓名、联系方式等个人资料。
+- **简历内容**：修改 `src/` 目录下的内容模块（如 `achievements.tex`、`education.tex`）。
+- **标题样式**：通过在 `resume.tex` 中包含对应文件（`heading_basic.tex` 或 `heading.tex`）选择基础或完整标题样式。
 
-## License
+## 许可证
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+本项目采用 MIT 许可证。详情请见 [LICENSE](LICENSE) 文件。
 
-## Inspiration
+## 灵感来源
 
-This project is inspired by the [Resume Template](https://github.com/aserador/resume-template) project. We customized and enhanced it to better support multi-language capabilities, bundled fonts, and automatic build features. Thanks to the author of the original project for their contributions to the open-source community!
+本项目受 [Resume Template](https://github.com/aserador/resume-template) 项目启发。我们进行了定制和增强，以更好地支持多语言、内置字体和自动化构建功能。感谢原项目作者对开源社区的贡献！
 
----
+### 注意事项
 
-### Notes
-
-- **Fonts**: The fonts used in this project (Lato and Source Han Serif) are bundled within the project, so no need for additional installation.
-- **Cross-platform compatibility**: The project is designed to work seamlessly on Linux, macOS, and Windows.
+- **字体**：项目中使用的字体（Lato 和思源黑体）已随项目打包，无需额外安装。
+- **跨平台兼容性**：项目设计为可在 Linux、macOS 和 Windows 系统上无缝运行。
