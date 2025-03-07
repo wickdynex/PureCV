@@ -32,7 +32,9 @@ git clone https://github.com/wickdynex/PureCV.git
 
 - **Linux** (Debian/Ubuntu):
 
+```bash
 sudo apt-get install texlive-xetex
+```
 
 - **macOS** (通过 Homebrew):
 
