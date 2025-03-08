@@ -38,7 +38,9 @@ sudo apt-get install texlive-xetex
 
 - **macOS** (通过 Homebrew):
 
+```bash
 brew install --cask mactex
+```
 
 - **Windows**：可安装 **MiKTeX** 或 **TeX Live**。
 
