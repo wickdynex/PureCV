@@ -59,7 +59,9 @@ brew install --cask mactex
 1. 打开终端，进入项目目录。
 2. 运行 `make` 命令构建简历。
 
+```bash
 make
+```
 
 生成的 `resume.pdf` 文件将保存在项目目录中。
 
