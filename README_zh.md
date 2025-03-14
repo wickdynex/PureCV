@@ -85,7 +85,6 @@ make clean
 
 您可通过修改以下内容定制简历：
 
-
 - **个人信息**：在 `resume.tex` 文件中更新姓名、联系方式等个人资料。
 - **简历内容**：修改 `src/` 目录下的内容模块（如 `achievements.tex`、`education.tex`）。
 - **标题样式**：通过在 `resume.tex` 中包含对应文件（`heading_basic.tex` 或 `heading.tex`）选择基础或完整标题样式。
