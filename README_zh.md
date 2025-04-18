@@ -93,6 +93,7 @@ make clean
 
 本项目采用 MIT 许可证。详情请见 [LICENSE](LICENSE) 文件。
 
+
 ## 灵感来源
 
 本项目受 [Resume Template](https://github.com/aserador/resume-template) 项目启发。我们进行了定制和增强，以更好地支持多语言、内置字体和自动化构建功能。感谢原项目作者对开源社区的贡献！
